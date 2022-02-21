@@ -1,0 +1,20 @@
+@font-face {
+    font-family: Poppins-Regular;
+    src: url("../font/Poppins-Regular.ttf");
+}
+@font-face {
+    font-family: Poppins-Medium;
+    src: url("../font/Poppins-Regular.ttf");
+}
+@font-face {
+    font-family: Poppins-SemiBold;
+    src: url("../font/Poppins-SemiBold.ttf");
+}
+@font-face {
+    font-family: ProximaNova-Regular;
+    src: url("../font/ProximaNova-Regular.ttf");
+}
+@font-face {
+    font-family: ProximaNova-SemiBold;
+    src: url("../font/ProximaNova-Semibold.ttf");
+}
