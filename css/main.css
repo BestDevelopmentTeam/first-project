@@ -1,10 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+/** Variables */
+:root{
+    --primary-color:#40BFFF;
+    --second-color: #FF4858 ;
+    --light-blue-color: #BCDDFE ;
+    --dark-color: #373737;
+}
+
+/** Fonts */
 @font-face {
     font-family: Poppins-Regular;
     src: url("../font/Poppins-Regular.ttf");
 }
 @font-face {
     font-family: Poppins-Medium;
-    src: url("../font/Poppins-Regular.ttf");
+    src: url("../font/Poppins-Medium.ttf");
 }
 @font-face {
     font-family: Poppins-SemiBold;
@@ -18,3 +38,8 @@
     font-family: ProximaNova-SemiBold;
     src: url("../font/ProximaNova-Semibold.ttf");
 }
+body{
+    font-family: "Poppins-Medium";
+}
+
+
