@@ -1,20 +1,30 @@
+@import url("./seller-section.css");
+@import url("./sneakers-section.css");
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-html,body{
+html,
+body {
     overflow-x: hidden;
     scroll-behavior: smooth;
 }
 
 /** Variables */
-:root{
-    --primary-color:#40BFFF;
-    --second-color: #FF4858 ;
-    --light-blue-color: #BCDDFE ;
+:root {
+    --primary-color: #40BFFF;
+    --second-color: #FF4858;
+    --light-blue-color: #BCDDFE;
     --dark-color: #373737;
+    --dark-blue-color: #223263;
+    --yellow-color: #FFC600;
+    --gray-color: #C1C8CE;
+    --gray-color-2: #9098B1;
+    --red-color: #FB7181;
+    --blue-color: #33A0FF;
+    --grey-color:#9098B1;
 }
 
 /** Fonts */
@@ -22,24 +32,50 @@ html,body{
     font-family: Poppins-Regular;
     src: url("../font/Poppins-Regular.ttf");
 }
+
 @font-face {
     font-family: Poppins-Medium;
     src: url("../font/Poppins-Medium.ttf");
 }
+
 @font-face {
     font-family: Poppins-SemiBold;
     src: url("../font/Poppins-SemiBold.ttf");
 }
+
 @font-face {
     font-family: ProximaNova-Regular;
     src: url("../font/ProximaNova-Regular.ttf");
 }
+
 @font-face {
     font-family: ProximaNova-SemiBold;
     src: url("../font/ProximaNova-Semibold.ttf");
 }
-body{
-    font-family: "Poppins-Medium";
+
+body {
+    font-family: "Poppins-Regular";
 }
 
+.container {
+    max-width: 1345px;
+    width: 100%;
+    margin: 0 auto;
+    padding-right: 20px;
+    padding-left: 20px;
+}
 
+@media (max-width: 1400px) {
+    .container {
+        max-width: 95vw;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+@media (max-width: 400px){
+    .container{
+        max-width: 100vw;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+}
