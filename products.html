@@ -5,102 +5,94 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>E-Comm - Products</title>
-    <!-- STYLE files -->
-    <link rel="stylesheet" href="./css/products.css"/>
-    <!-- FONTS -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/products.css" />
   </head>
   <body>
-  <div class="container">
-    <section class="hot-deal">
-      <div class="sidebar">
-        <div class="container">
-          <h2 class="container__title">Hot Deals</h2>
-          <ul class="sidebar__hotdeals">
-            <li>
-              <span class="brandname">Nike</span>
-              <span class="productcount">2</span>
-            </li>
-            <li class="active">
-              <span class="brandname">Adidas</span>
-              <span class="productcount">48</span>
-            </li>
-            <li>
-              <span class="brandname">Airmax</span>
-              <span class="productcount">14</span>
-            </li>
-            <li>
-              <span class="brandname">Vans</span>
-              <span class="productcount">15</span>
-            </li>
-            <li>
-              <span class="brandname">Nike</span>
-              <span class="productcount">23</span>
-            </li>
-            <li>
-              <span class="brandname">All Stars</span>
-              <span class="productcount">1</span>
-            </li>
-            <li>
-              <span class="brandname">Adidas</span>
-              <span class="productcount">95</span>
-            </li>
-          </ul>
-        </div>
-        <div class="container">
-          <h2 class="container__title">Prices</h2>
-          <div class="ranger">
-            <ul>
-              <li><span>Ranger: </span> <span>$13.99-$25.99</span></li>
+    <div class="content">
+      <section class="hot-deal">
+        <div class="sidebar">
+          <div class="product__container">
+            <h2 class="container__title">Hot Deals</h2>
+            <ul class="sidebar__hotdeals">
               <li>
-                <input
-                  type="range"
-                  min="13.99"
-                  max="100"
-                  class="ranger__range"
-                />
+                <span class="brandname">Nike</span>
+                <span class="productcount">2</span>
+              </li>
+              <li class="active">
+                <span class="brandname">Adidas</span>
+                <span class="productcount">48</span>
+              </li>
+              <li>
+                <span class="brandname">Airmax</span>
+                <span class="productcount">14</span>
+              </li>
+              <li>
+                <span class="brandname">Vans</span>
+                <span class="productcount">15</span>
+              </li>
+              <li>
+                <span class="brandname">Nike</span>
+                <span class="productcount">23</span>
+              </li>
+              <li>
+                <span class="brandname">All Stars</span>
+                <span class="productcount">1</span>
+              </li>
+              <li>
+                <span class="brandname">Adidas</span>
+                <span class="productcount">95</span>
               </li>
             </ul>
           </div>
-        </div>
-        <div class="container">
-          <h2 class="container__title">Colors</h2>
-          <div class="container__colors">
-            <div class="color red"></div>
-            <div class="color blue"></div>
-            <div class="color black"></div>
-            <div class="color yellow"></div>
-            <div class="color purple"></div>
-            <div class="color gray"></div>
+          <div class="product__container">
+            <h2 class="container__title">Prices</h2>
+            <div class="ranger">
+              <ul>
+                <li><span>Ranger: </span> <span>$13.99-$25.99</span></li>
+                <li>
+                  <input
+                    type="range"
+                    min="13.99"
+                    max="100"
+                    class="ranger__range"
+                  />
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="product__container">
+            <h2 class="container__title">Colors</h2>
+            <div class="container__colors">
+              <div class="color red"></div>
+              <div class="color blue"></div>
+              <div class="color black"></div>
+              <div class="color yellow"></div>
+              <div class="color purple"></div>
+              <div class="color gray"></div>
+            </div>
+          </div>
+          <div class="product__container">
+            <button>More</button>
           </div>
         </div>
-        <div class="container">
-          <button>More</button>
-        </div>
-      </div>
-      <div class="right__side">
-        <div class="card">
-          <img
-            src="./images/shoes-shoe-png-transparent-shoe-images-pluspng-17 1.png"
-            alt="Shoes"
-          />
-          <div class="card__about">
-            <h1 class="card__title">Adidas Men Running Sneakers</h1>
-            <p class="card__description">
-              Performance and design. Taken right to the edge.
-            </p>
-            <button class="card__button">shop now</button>
+        <div class="right__side">
+          <div class="card">
+            <img src="./images/products/sneaker.png" alt="Shoes" />
+            <div class="card__about">
+              <h1 class="card__title">Adidas Men Running Sneakers</h1>
+              <p class="card__description">
+                Performance and design. Taken right to the edge.
+              </p>
+              <button class="card__button">shop now</button>
+            </div>
+          </div>
+          <div class="product__section" style="height: 150vh; background: gray">
+            <!-- <-remove the style attr -->
+            <!-- content -->
           </div>
         </div>
-        <div class="product__section" style="height: 150vh; background: gray">
-          <!-- <-remove the style attr -->
-          <!-- content -->
-        </div>
-      </div>
-    </section>
-  </div>
+      </section>
+    </div>
     <script src="./js/app.js"></script>
   </body>
 </html>

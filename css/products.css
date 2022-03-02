@@ -25,7 +25,7 @@
 .sidebar {
   flex: 1.25;
 }
-.container {
+.product__container {
   padding: 1rem;
   background: var(--background);
   display: flex;
@@ -90,7 +90,7 @@
 .gray::before {
   background: #efdfdf;
 }
-.container button {
+.product__container button {
   background: transparent;
   border: none;
   outline: none;
@@ -103,19 +103,21 @@
 }
 .right__side .card {
   position: relative;
-  min-height: 50vh;
+  max-height: 320px;
+  height: 320px;
   width: 100%;
   background: var(--primary-color);
   color: #fff;
   display: flex;
   align-items: center;
-  padding: 5rem;
+  padding: 2rem 5vw;
   margin-bottom: 1rem;
 }
 .card img {
   position: absolute;
-  top: -35px;
-  right: 80px;
+  transform: scale(1.1);
+  top: -30px;
+  right: 5vw;
 }
 .card__title {
   font-family: Poppins-Medium, sans-serif;
@@ -128,6 +130,7 @@
   font-size: 14px;
   line-height: 21px;
   margin-top: 5px;
+  width: 75%;
 }
 .card__button {
   position: relative;
@@ -154,17 +157,23 @@
 @media screen and (max-width: 1270px) {
   .card img {
     transform: scale(0.9);
-    left: 400px;
+    right: 5vw;
     top: 0px;
+  }
+}
+@media screen and (max-width: 1180px) {
+  .card img {
+    right: 0;
+  }
+  .card__description {
+    width: 60%;
   }
 }
 @media screen and (max-width: 1080px) {
   .right__side .card {
-    padding: 5rem 15px;
+    padding: 5vw;
   }
   .card img {
-    left: unset;
-    right: -45px;
     top: 1rem;
   }
   .card__title,
@@ -172,14 +181,26 @@
     width: 50%;
   }
 }
-@media screen and (max-width: 876px) {
+@media screen and (max-width: 950px) {
+  .card img {
+    transform: scale(0.8) translateX(1rem);
+  }
+  .card__description {
+    width: 40%;
+  }
+}
+
+@media (max-width: 876px) {
   .card {
     display: flex;
     flex-direction: column;
     align-items: center;
+    max-height: fit-content !important;
+    height: fit-content !important;
   }
   .card img {
     position: unset;
+    transform: none;
   }
   .card__title,
   .card__description {
@@ -196,7 +217,7 @@
 }
 @media screen and (max-width: 420px) {
   .card {
-    padding: 15px;
+    padding: 15px !important;
   }
   .card img {
     transform: scale(0.7);
