@@ -1,5 +1,13 @@
 @import url("./seller-section.css");
 @import url("./sneakers-section.css");
+@import url("./hero.css");
+
+
+
+/* ! Imported Styles */
+
+
+
 * {
     margin: 0;
     padding: 0;
@@ -10,6 +18,8 @@ html,
 body {
     overflow-x: hidden;
     scroll-behavior: smooth;
+    min-height: 100vh;
+    width: 100%;
 }
 
 /** Variables */
@@ -68,8 +78,6 @@ body {
 @media (max-width: 1400px) {
     .container {
         max-width: 95vw;
-        padding-left: 10px;
-        padding-right: 10px;
     }
 }
 @media (max-width: 400px){
