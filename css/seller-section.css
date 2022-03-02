@@ -1,0 +1,550 @@
+/** Import Main Css File */
+@import url("./main.css");
+
+
+/** Seller Section Styles */
+.seller {
+    width: 100%;
+    padding-top: 350px;
+    margin-bottom: 100px;
+}
+
+.seller__inner {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/** Seller Section Top Styles  */
+.seller__top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.seller__title {
+    font-family: "Poppins-SemiBold", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 35px;
+    line-height: 52px;
+    margin-bottom: 26px;
+}
+
+.seller__navigation-item {
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 33px;
+    display: inline-block;
+    text-decoration: none;
+    margin: 0 45px;
+    cursor: pointer;
+    transition: .3s ease-out;
+}
+
+.seller__navigation-item:hover {
+    color: var(--primary-color);
+}
+
+.seller--navigation--item--active {
+    color: var(--primary-color);
+    text-decoration: 1px underline var(--primary-color);
+}
+
+/** Seller Section Card Styles */
+.seller__cards {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 35px;
+    margin-bottom: 30px;
+}
+
+.seller__card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 3px solid #F6F7F8;
+    border-radius: 10px;
+}
+
+.seller__card-imgbox {
+    width: 100%;
+    height: 270px;
+    position: relative;
+    margin-bottom: 10px;
+    border-radius: 6px;
+    overflow: hidden;
+    cursor: pointer;
+    z-index: 12;
+}
+
+.seller__card-imgbox img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.seller__card-shape {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-family: "ProximaNova-Regular", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+    background-color: var(--second-color);
+    color: #fff;
+    padding: 6px;
+    border-radius: 3px;
+}
+
+.seller__card-imgbox__overlay {
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    transition: .5s ease;
+    bottom: -100%;
+}
+.seller__card-imgbox__overlay-item  {
+    width: 55px;
+    height: 55px;
+    margin: 0 12px;
+    border: 2px solid #33A0FF30;
+    padding: 15px;
+    border-radius: 50%;
+    z-index: 11;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .3s ease-in-out;
+}
+.seller__card-imgbox__overlay-item svg{
+    width: 20px;
+    height: 20px;
+}
+.seller__card-imgbox__overlay svg path {
+    fill: var(--blue-color);
+}
+
+.seller__card-imgbox__overlay-item:hover {
+    border: 2px solid var(--blue-color);
+    background-color: var(--blue-color);
+}
+
+.seller__card-imgbox__overlay-item:hover path {
+    fill: #fff;
+}
+
+.seller__card-info {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+.seller__card-imgbox:hover .seller__card-imgbox__overlay {
+    display: flex;
+    bottom: 0;
+}
+
+.seller__card-title {
+    font-family: "Poppins-Medium";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 150%;
+    color: var(--dark-blue-color);
+    margin-bottom: 6px;
+    letter-spacing: 0.5px;
+    text-align: center;
+}
+
+.seller__card-rating {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.seller__card-rating svg {
+    width: 18px;
+    height: 18px;
+    margin: 0 6px;
+}
+
+.seller__card-rating svg path {
+    fill: var(--yellow-color);
+}
+
+.seller__card-rating svg:nth-child(5) path {
+    fill: var(--gray-color);
+}
+
+.seller__card-prices {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+.seller__card-active__price {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 180%;
+    letter-spacing: .5px;
+    color: var(--primary-color);
+    font-family: "Poppins-Medium";
+
+}
+
+.seller__card-non__active-price {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 150%;
+    letter-spacing: 0.5px;
+    color: var(--gray-color-2);
+    text-decoration: line-through;
+    margin: 0 8px;
+}
+
+.seller__card-discount {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 150%;
+    color: var(--red-color);
+    letter-spacing: 0.5px;
+    font-family: "Poppins-Medium";
+}
+
+/** Seller Section Button Styles  */
+.seller__button {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    font-family: "Poppins-Medium", sans-serif;
+    line-height: 30px;
+    color: var(--blue-color);
+    text-decoration: none;
+    border-bottom: 3px solid var(--blue-color);
+    transition: .4s ease;
+}
+
+.seller__button:hover {
+    background-color: var(--blue-color);
+    color: #fff;
+    padding: 10px 20px;
+    border-bottom: none;
+    border-radius: 8px;
+}
+
+.seller__mobile-top {
+    width: 100%;
+    display: none;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.seller__mobile-top>h2,a {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    font-family: "Poppins-SemiBold", sans-serif;
+}
+
+.seller__mobile-top__title {
+    color: var(--dark-blue-color);
+}
+
+.seller__mobile-top__link {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.seller__category {
+    width: 100%;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 25px;
+}
+
+.seller__category-items {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.seller__category-item {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: center;
+    flex-direction: column;
+    flex: 1;
+    cursor: pointer;
+}
+
+.seller__category-item__icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 1px solid rgba(27, 153, 214, 0.21);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 8px;
+    transition: .4s ease;
+    cursor: pointer;
+}
+
+.seller__category-item__icon svg {
+    width: 20px;
+    height: 20px;
+}
+
+.seller__category-item__icon svg path {
+    transition: .4s ease-in-out;
+}
+
+.seller__category-item span {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 150%;
+    font-family: "Poppins-Regular", sans-serif;
+    color: var(--grey-color);
+    transition: .4s ease;
+}
+
+.seller__category-item:hover .seller__category-item__icon {
+    background-color: var(--blue-color);
+}
+
+.seller__category-item:hover .seller__category-item__icon svg path {
+    stroke: #fff;
+}
+.seller__category-item:hover span{
+    color: #222;
+}
+
+/** Responsive Media Queries  */
+@media (max-width: 1400px) {
+    .seller__card-prices {
+        width: 90%;
+    }
+}
+@media (max-width: 1200px) {
+    .seller__cards {
+        grid-gap: 20px;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+@media (max-width:992px) {
+    .seller__cards {
+        grid-gap: 12px;
+    }
+
+    .seller__navigation {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .seller__navigation-item {
+        margin: 0;
+    }
+
+    .seller__card-imgbox {
+        height: 250px;
+    }
+
+    .seller__card-title {
+        font-size: 16px;
+    }
+
+    .seller__card-prices {
+        flex-wrap: wrap;
+    }
+
+    .seller__top {
+        width: 100%;
+    }
+}
+@media (max-width:768px) {
+    .seller__cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .seller__navigation-item {
+        font-size: 20px;
+    }
+
+    .seller {
+        margin-bottom: 60px;
+    }
+}
+@media (max-width: 576px) {
+    .seller__card-imgbox {
+        height: 200px;
+    }
+
+    .seller__card-info {
+        padding-inline: 10px;
+    }
+
+    .seller__card-rating {
+        display: none;
+    }
+
+    .seller__title {
+        font-size: 30px;
+    }
+
+    .seller__navigation-item {
+        font-size: 18px;
+    }
+
+    .seller__button {
+        font-size: 18px;
+    }
+
+    .seller {
+        margin-bottom: 40px;
+    }
+    .seller__card-imgbox__overlay-item{
+        width: 50px;
+        height: 50px;
+    }
+
+}
+@media (max-width:450px) {
+    .seller__navigation {
+        display: none;
+    }
+
+    .seller__card-imgbox {
+        height: 130px;
+    }
+
+    .seller__card-title {
+        font-size: 14px;
+        text-align: start;
+    }
+
+    .seller__cards {
+        grid-gap: 8px;
+    }
+
+    .seller__card-active__price {
+        font-size: 14px;
+    }
+
+    .seller__card-info {
+        align-items: flex-start;
+        justify-content: flex-start;
+        text-align: start;
+        padding-inline: 15px;
+    }
+
+    .seller__card-prices {
+        width: 100%;
+        justify-content: flex-start;
+    }
+
+    .seller__card-shape {
+        font-size: 14px;
+    }
+    .seller__category{
+        display: flex;
+    }
+    .seller__mobile-top {
+        display: flex;
+    }
+    .seller__title{
+        display: none;
+    }
+}
+@media (max-width:400px) {
+    .seller__card-shape {
+        padding: 4px;
+        font-size: 13px;
+    }
+    .seller__button {
+        display: none;
+    }
+    .seller__mobile-top>h2,a {
+        font-size: 14px;
+    }
+    .seller__card-imgbox{
+        height: 110px;
+    }
+    .seller__card-prices span{
+        font-size: 12px;
+    }
+    .seller__card-title{
+        font-size: 12px;
+        font-weight: 500;
+        font-family: "Poppins-SemiBold";
+    }
+    .seller__card-imgbox__overlay-item{
+        padding: 4px;
+        width:45px;
+        height: 45px;
+    }
+    .seller__card-imgbox__overlay-item svg{
+        width: 14px;
+        height: 14px;
+    }
+    .seller__cards{
+        margin-bottom: 20px;
+    }
+    
+}
+@media (max-width:350px) {
+    .seller__card-shape {
+        font-size: 10px;
+        padding: 2px 5px;
+    }
+
+    .seller__button {
+        font-size: 16px;
+    }
+
+    .seller__button:hover {
+        padding: 8px 20px;
+    }  
+    .seller__mobile-top>h2,a {
+        font-size: 14px;
+    }
+    .seller__card-imgbox{
+        height: 100px;
+    }
+    .seller__card-prices span{
+        font-size: 10px;
+    }
+}

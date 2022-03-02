@@ -1,0 +1,227 @@
+@import url("./main.css");
+
+/** Sneakers Section Styles  */
+.sneakers {
+    width: 100%;
+    background-color: var(--primary-color);
+}
+
+.sneakers__content {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sneakers__info {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    color: #fff;
+}
+
+.sneakers__title {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 55px;
+    line-height: 82px;
+    margin-bottom: 24px;
+    font-family: "Poppins-Medium", sans-serif;
+}
+
+.sneakers__subtitle {
+    font-family: "Poppins-Regular", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    margin-bottom: 12px;
+    width: 100%;
+}
+
+.sneakers__button {
+    font-family: "Poppins-SemiBold", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+    cursor: pointer;
+    transition: .4s cubic-bezier(.45, .05, .55, .95);
+}
+
+.sneakers__button::before {
+    content: "";
+    position: absolute;
+    width: 70%;
+    height: 3px;
+    background-color: #fff;
+    bottom: -8px;
+    left: 0;
+}
+
+.sneakers__button:hover::before {
+    display: none;
+}
+
+.sneakers__button:hover {
+    background-color: #fff;
+    color: var(--blue-color);
+    border-radius: 8px;
+    padding: 10px 20px;
+}
+
+.sneakers__imgbox {
+    transform: translateY(-80px);
+    height: 590px;
+}
+
+.sneakers__imgbox img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/** Responsive Media Queries  */
+@media (max-width: 1400px) {
+    .sneakers__title {
+        line-height: 70px;
+        font-size: 45px;
+        margin-bottom: 20px;
+    }
+
+    .sneakers__imgbox {
+        height: 500px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .sneakers__title {
+        line-height: 60px;
+        font-size: 40px;
+        margin-bottom: 15px;
+    }
+
+    .sneakers__imgbox {
+        width: 100%;
+        transform: translateY(-60px);
+    }
+
+    .sneakers__subtitle {
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 992px) {
+    .sneakers__content {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .sneakers__imgbox {
+        transform: none;
+        height: 400px;
+    }
+
+    .sneakers__imgbox img {
+        object-fit: contain;
+    }
+}
+
+@media (max-width: 768px) {
+    .sneakers__content {
+        padding-bottom: 0;
+    }
+
+    .sneakers__imgbox {
+        height: 360px;
+    }
+}
+
+@media (max-width: 576px) {
+    .sneakers__imgbox {
+        height: 320px;
+    }
+
+    .sneakers__title {
+        line-height: 50px;
+        font-size: 34px;
+    }
+
+    .sneakers__subtitle {
+        font-size: 20px;
+    }
+
+    .sneakers__button {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 450px) {
+    .sneakers__title {
+        font-size: 30px;
+        margin-bottom: 10px;
+        line-height: 45px;
+    }
+
+    .sneakers__subtitle {
+        font-size: 16px;
+        line-height: 28px;
+    }
+
+    .sneakers__imgbox {
+        height: 240px;
+    }
+
+    .sneakers__button {
+        font-size: 16px;
+    }
+
+    .sneakers__button:hover {
+        padding: 8px 20px;
+    }
+}
+
+@media (max-width:400px) {
+    .sneakers {
+        display: none;
+    }
+}
+
+.recommend__card {
+    width: 98vw;
+    margin: 0 auto;
+    padding: 48px 24px;
+    background-image: url("/image/recommend-section/recommend-section-main.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.recommend__card-title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 150%;
+    font-family: "Poppins-SemiBold",sans-serif;
+    margin-bottom: 16px;
+    width: 75%;
+}
+
+.recommend__card-subtitle {
+    font-family: "Poppins-Medium",sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 180%;
+    letter-spacing: 0.5px;
+}
