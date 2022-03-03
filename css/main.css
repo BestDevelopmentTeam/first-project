@@ -3,6 +3,7 @@
 @import url("./sneakers-section.css");
 @import url("./hero.css");
 @import url("./base.css");
+@import url("./contact.css");
 
 
 /* ! Imported Styles */
@@ -61,6 +62,21 @@ body {
 @font-face {
     font-family: ProximaNova-SemiBold;
     src: url("../font/ProximaNova-Semibold.ttf");
+}
+
+@font-face {
+    font-family: Raleway-Regular;
+    src: url("../font/Raleway-Regular.ttf");
+}
+
+@font-face {
+    font-family: Raleway-Medium;
+    src: url("../font/Raleway-Medium.ttf");
+}
+
+@font-face {
+    font-family: Raleway-SemiBold;
+    src: url("../font/Raleway-SemiBold.ttf");
 }
 
 body {
