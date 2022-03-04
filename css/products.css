@@ -8,19 +8,19 @@
   --text-color: #22262a;
   --background: #f6f7f8;
 }
+.content {
+  display: flex;
+  margin-top: 3rem;
+}
+.content .sidebar,
+.content .right__side {
+  margin: 0 10px;
+}
 .container__title {
   font-weight: 500;
   font-size: 18px;
   line-height: 27px;
   color: var(--text-color);
-}
-.hot-deal {
-  padding: 1rem;
-  width: 100%;
-  display: flex;
-}
-.hot-deal > div {
-  margin: 15px;
 }
 .sidebar {
   flex: 1.25;
@@ -191,6 +191,9 @@
 }
 
 @media (max-width: 876px) {
+  .right__side {
+    width: 90% !important;
+  }
   .card {
     display: flex;
     flex-direction: column;
@@ -208,7 +211,7 @@
   }
 }
 @media screen and (max-width: 755px) {
-  .hot-deal {
+  .content {
     flex-direction: column;
   }
   .card__about {
