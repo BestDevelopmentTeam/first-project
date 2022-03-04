@@ -1,0 +1,87 @@
+@import url(./stylesheets/sneakers.css);
+@import url(./stylesheets/information_section.css);
+@import url(./stylesheets/media.css);
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  font-size: 10px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
+  background-color: white;
+  font-family: "Poppins-Medium", sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
+
+:root {
+ 
+  --color1: #40bfff;
+  --color2: #fb7181;
+  --color3: #006cff;
+  --color4: #fc3e39;
+  --color5: #171717;
+  --color6: #fff600;
+  --color7: #33a0ff;
+  --color8: #262626;
+  --color9: #22262a;
+  --color10: #c1c8ce;
+  --color11: #f6f7f8;
+  --color12: #9098b1;
+  --color13: #f1f3f4;
+  --color14: #e6f1ff;
+  --color15: rgba(0, 108, 255, 0.4);
+  --color16: rgba(252, 62, 57, 0.4);
+  --color17: rgba(23, 23, 23, 0.4);
+  --color18: rgba(255, 246, 0, 0.4);
+  --color19: #385c8e;
+  --color20: #03a9f4;
+  --color21: #ff4858;
+  --color22: #2e90e5;
+  --color23: #fafafb;
+  --color24: #e5e8ea;
+  --color25: #9098b1;
+  
+  --poppins: "Poppins", sans-serif;
+  --proxima_nova_reg: "ProximaNova-Regular", sans-serif;
+  --proxima_nova_sb: "ProximaNova-SemiBold", sans-serif;
+}
+
+/** Fonts */
+@font-face {
+  font-family: Poppins-Regular;
+  src: url("./font/Poppins-Regular.ttf");
+}
+@font-face {
+  font-family: Poppins-Medium;
+  src: url("./font/Poppins-Medium.ttf");
+}
+@font-face {
+  font-family: Poppins-SemiBold;
+  src: url("./font/Poppins-SemiBold.ttf");
+}
+@font-face {
+  font-family: ProximaNova-Regular;
+  src: url("./font/ProximaNova-Regular.ttf");
+}
+@font-face {
+  font-family: ProximaNova-SemiBold;
+  src: url("./font/ProximaNova-Semibold.ttf");
+}
+
+.container {
+  max-width: 1345px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+}

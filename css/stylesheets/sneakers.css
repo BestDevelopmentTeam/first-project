@@ -1,0 +1,549 @@
+hr {
+  width: 100%;
+  height: 0.1px;
+  background-color: var(--color11);
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+  opacity: 0.2;
+}
+del {
+  font-family: var(--proxima_nova_reg);
+  color: var(--color10);
+}
+img {
+  width: 100%;
+  height: 100%;
+}
+.hidden {
+  display: none;
+}
+.sneakers {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+  width: 100%;
+  height: auto;
+}
+.sneakers_left_mainBlock {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 35.5%;
+  height: 100%;
+}
+.sneakers_right_mainBlock {
+  width: 25.5%;
+  height: 100%;
+}
+.sneakers_mainBlock {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+.sneakers_leftInnerBlock {
+  display: flex;
+  align-items: center;
+  width: 80%;
+}
+.sneakers_leftInnerBlock:first-child {
+  justify-content: center;
+  height: 27.5rem;
+}
+.sneakers_leftInnerBlock:last-child {
+  justify-content: space-between;
+  margin-top: 14rem;
+  width: 39rem;
+  padding-left: 1rem;
+}
+.sneakers_leftInnerBlock:last-child img:hover {
+  border-color: var(--color7);
+}
+.sneakers__leftListImages {
+  width: 85.56px;
+  height: 85.15px;
+  border: 1px solid var(--color10);
+}
+.sneakers_middle_mainBlock {
+  height: 100%;
+  width: 39%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+.sneakers_middle_upperBlock {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: column;
+  height: 8rem;
+  width: 100%;
+}
+.sneakers_middle_smallBlock {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 30rem;
+}
+.sneakers_middle_smallBlock p {
+  font-size: 16px;
+  line-height: 19px;
+  color: var(--color10);
+  font-family: var(--proxima_nova_reg);
+}
+.sneakers_middle_smallBlock p:last-child {
+  color: var(--color7);
+  cursor: pointer;
+}
+.sneakers_middle_socialBlock {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 6rem;
+  margin-top: 2rem;
+}
+.sneakers_middle_socialInnerBlock {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 246.45px;
+  height: 48.9px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.sneakers_middle_socialInnerBlock:first-child i {
+  width: 8.15px;
+  height: 16.1px;
+  background: url("../images/facebook.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.sneakers_middle_socialInnerBlock:last-child i {
+  width: 17.3px;
+  height: 12.65px;
+  background: url("../images/twitter.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.sneakers_middle_socialInnerBlock i {
+  cursor: pointer;
+  margin-right: 0.6rem;
+}
+.sneakers_middle_socialInnerBlock p {
+  font-family: var(--poppins);
+  font-weight: 400;
+  color: white;
+  font-size: 16px;
+  line-height: 24px;
+  margin-left: 0.6rem;
+}
+.sneakers_middle_socialInnerBlock:first-child {
+  background-color: var(--color19);
+}
+.sneakers_middle_socialInnerBlock:last-child {
+  background-color: var(--color20);
+}
+.sneakers_middle_middleBlock {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 100%;
+  height: 15.5rem;
+}
+.sneakers_middle_footerBlock {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 6rem;
+  margin-top: 1rem;
+}
+.sneakers__name {
+  font-weight: 500;
+  font-size: 24px;
+  font-style: normal;
+  line-height: 36px;
+  color: var(--color9);
+  text-transform: capitalize;
+  font-family: var(--poppins);
+}
+.sneakers_stars {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 7rem;
+}
+.sneakers_stars i {
+  background: url("../images/yellow_star.png");
+  background-size: cover;
+  width: 12px;
+  height: 10.5px;
+}
+.sneakers_stars i:last-child {
+  background: url("../images/grey_star.png");
+}
+.sneakers_priceBlock {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+.sneakers__priceText {
+  font-size: 20px;
+  line-height: 180%;
+  color: #40bfff;
+  letter-spacing: 0.5px;
+  text-transform: capitalize;
+  font-family: var(--poppins);
+  font-weight: 700;
+}
+.sneakers__priceText:nth-child(2),
+.sneakers__priceText:last-child {
+  font-size: 14px;
+  line-height: 150%;
+}
+.sneakers__priceText:nth-child(2) {
+  color: var(--color12);
+  font-weight: 400;
+  margin: 0 0.7rem;
+}
+.sneakers__priceText:last-child {
+  color: var(--color2);
+}
+.sneakers_info {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  place-items: flex-start;
+  margin-top: 0.5rem;
+  height: 10rem;
+  width: 27rem;
+}
+.sneakers_info p {
+  font-size: 14px;
+  font-family: var(--poppins);
+}
+.sneakers_below_block {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 100%;
+  height: 9rem;
+  margin: 1.5rem 0;
+}
+.sneakers_colorFunction {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  width: 30rem;
+}
+.sneakers__text {
+  font-family: var(--poppins);
+  text-transform: capitalize;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--color8);
+  font-style: normal;
+  font-weight: normal;
+}
+.sneakers_colors {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  width: 16rem;
+  height: 3rem;
+}
+.sneakers__colorsBorder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid transparent;
+  border-radius: 50%;
+  position: relative;
+  width: 35.5px;
+  height: 36px;
+  pointer-events: none;
+}
+.sneakers__colorsBorder span {
+  background-color: var(--color3);
+  width: 20.75px;
+  height: 21.3px;
+  border-radius: 50%;
+  position: absolute;
+  cursor: pointer;
+  pointer-events: auto;
+}
+.sneakers__colorsBorder:hover {
+  border-color: var(--color15);
+}
+.sneakers__colorsBorder:nth-child(2):hover {
+  border-color: var(--color16);
+}
+.sneakers__colorsBorder:nth-child(2) span {
+  background-color: var(--color4);
+}
+.sneakers__colorsBorder:nth-child(3):hover {
+  border-color: var(--color17);
+}
+.sneakers__colorsBorder:nth-child(3) span {
+  background-color: var(--color5);
+}
+.sneakers__colorsBorder:last-child:hover {
+  border-color: var(--color18);
+}
+.sneakers__colorsBorder:last-child span {
+  background-color: var(--color6);
+}
+.sneakers_size {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 121.15px;
+  height: 38.28px;
+  border: 1px solid var(--color13);
+  border-radius: 5px;
+  padding: 0 1rem;
+  cursor: pointer;
+}
+.sneakers_sizeFunction {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+  width: 26rem;
+}
+.sneakers_sizeBlock {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.sneakers_sizeBlock span {
+  width: 13rem;
+  height: 3.5rem;
+  border: 1px solid var(--color13);
+  border-radius: 5px;
+  padding: 0 1rem;
+}
+.sneakers_size p {
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 17px;
+  font-family: var(--proxima_nova_reg);
+}
+.sneakers_size i {
+  background: url("../images/arrow_down.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 7.1px;
+  height: 4.25px;
+}
+.sneakers_footerInnerBlock {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 123.28px;
+  height: 48.91px;
+  border: 1px solid var(--color11);
+  background-color: var(--color11);
+  border-radius: 5px;
+  padding: 0 1rem;
+}
+.sneakers_footerInnerBlock:last-child {
+  width: 23rem;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+}
+.sneakers_footerInnerBlock:last-child span {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid var(--color14);
+  background-color: var(--color14);
+  border-radius: 5px;
+  cursor: pointer;
+  pointer-events: none;
+}
+.sneakers_footerInnerBlock:last-child span:hover {
+  border-color: var(--color7);
+}
+.sneakers_footerInnerBlock:last-child span i {
+  pointer-events: auto;
+  cursor: pointer;
+}
+.sneakers_footerInnerBlock:last-child span:first-child {
+  width: 160px;
+  height: 49px;
+  padding: 0 1.5rem;
+}
+.sneakers_footerInnerBlock:last-child span:first-child p {
+  color: var(--color7);
+  text-transform: capitalize;
+}
+.sneakers_footerInnerBlock:last-child span:last-child {
+  width: 49px;
+  height: 49px;
+  justify-content: center;
+}
+.sneakers_footerInnerBlock:last-child span:last-child i {
+  width: 17px;
+  height: 15px;
+  background: url("../images/blue_heart.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.sneakers_footerInnerBlock p {
+  font-size: 16px;
+  font-family: var(--proxima_nova_reg);
+}
+.sneakers_footerInnerBlock:first-child i {
+  width: 9px;
+  height: 2.15px;
+  cursor: pointer;
+  pointer-events: auto;
+}
+.sneakers_footerInnerBlock:first-child i:first-child {
+  background: url("../images/minus_sign.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.sneakers_footerInnerBlock:first-child i:last-child {
+  background: url("../images/plus_sign.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 9px;
+}
+.sneakers__borderHover {
+  pointer-events: none;
+}
+.sneakers__borderHover:hover {
+  border-color: var(--color7);
+}
+.sneakers__borderHover i {
+  pointer-events: auto;
+}
+.sneakers_rightInnerBlock {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  height: 100%;
+}
+.sneakers_rightInnerBlock p {
+  font-family: var(--proxima_nova_reg);
+  text-transform: uppercase;
+  color: var(--color10);
+  font-size: 18px;
+  margin-left: 3rem;
+}
+.sneakers_rightValueBlock {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  width: 150px;
+  height: 45px;
+}
+.sneakers_rightValueBlock p {
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--color21);
+  font-family: var(--proxima_nova_reg);
+  margin: 0;
+}
+.sneakers_rightValueBlock span {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 9rem;
+  padding-right: 0.5rem;
+}
+.sneakers_rightValueBlock span del {
+  font-size: 16px;
+}
+.sneakers_rightImgBlock {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 80%;
+  height: 367.91px;
+  border: 3px solid whitesmoke;
+  margin-top: 4.5rem;
+}
+.sneakers_rightStarsBlock {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 7rem;
+}
+.sneakers_rightStarsBlock i {
+  background: url("../images/yellow_star.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 11px;
+  height: 10.5px;
+}
+.sneakers_rightStarsBlock i:last-child {
+  background: url("../images/grey_star.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.sneakers_rightBelowBlock {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 5rem;
+  padding: 0 9rem;
+}
+.sneakers_rightBelowBlock span {
+  width: 31.9px;
+  height: 3.2px;
+  background-color: whitesmoke;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.sneakers_rightBelowBlock span:hover {
+  background-color: var(--color7);
+}
+.sneakers__rightImage {
+  background: url("../../images/product_content/sneaker_image1.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 239.68px;
+}
+.sneakers__cart {
+  background: url("../images/cart.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 17px;
+  height: 17px;
+}
+.sneakers__icon {
+  width: 8.15px;
+  height: 16.1px;
+}
+.sneakers__redHeart {
+  animation-name: redHeart;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+}
