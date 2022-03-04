@@ -20,8 +20,9 @@
 
 .base-flex {
     width: 100%;
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
     align-items: center;
 }
 
@@ -253,7 +254,7 @@
 /* media quers */
 
 @media only screen and (max-width: 1450px) {
-    .base {
+    .base-flex  {
         grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
     }
 }
@@ -263,7 +264,7 @@
         width: 100%;
     }
 
-    .base {
+    .base-flex {
         grid-template-columns: repeat(auto-fill, minmax(266px, 1fr));
         gap: 1.5rem;
     }
@@ -289,13 +290,13 @@
 
     .base-form__btn {
         font-size: 1rem;
-        padding: 0.5rem;
+        padding: 1.1rem 1.6875rem;
     }
 }
 
 
 @media only screen and (max-width: 1136px) {
-    .base {
+    .base-flex {
         grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
     }
 
@@ -321,12 +322,8 @@
 
 @media only screen and (max-width: 992px) {
 
-    .base {
+    .base-flex {
         grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
-    }
-
-    .base-form__btn {
-        width: 30%; 
     }
 
     .base__image-shoes{
@@ -336,13 +333,13 @@
     }
 
     .base-form {
-        width: 66%;
+        width: 100%;
     }
 }
 
 @media only screen and (max-width: 768px) {
 
-    .base {
+    .base-flex {
         grid-template-columns: repeat(2, 1fr);
         font-size: 0.8rem;
         gap: 0.8rem;
@@ -360,14 +357,10 @@
         width: 152px;
         height: 152px;
     }
-
-    .base-form {
-        width: 100%;
-    } 
 }
 
 @media only screen and (max-width: 450px) {
-    .base {
+    .base-flex {
         grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
     }
 
@@ -411,15 +404,6 @@
         width: 100%;
         grid-column: 1/3;
         position: relative;
-    }
-
-    .base-body__img {
-        width: 99%;
-        height: 206px;
-        object-fit: cover;
-        border-radius: 6px;
-        position: relative;
-        top: -52px;
     }
 
     .base-mobile__body-h2 {
@@ -523,8 +507,8 @@
 @media only screen and (max-width: 366px) {
 
     .base-mobile__card {
-        width: 155px;
-        height: 51vh;
+        width: 100%;
+        height: auto;
     }
 }
 
@@ -534,142 +518,9 @@
         font-size: 0.8rem;
     }
 
-    .base-mobile__card {
-        height: 46vh;
-    }
-
     .base-mobile__card-img {
         width: 100%;
     }
 }
 
-@media only screen and (max-width: 350px) {
-    .base-mobile {
-        width: 95%;
-        font-size: 0.8rem;
-    }
-
-    .base-mobile__card {
-        width: 157px;
-        height: 46vh;
-    }
-
-}
-
-@media only screen and (max-width: 346px) {
-
-    .base-mobile__card {
-        width: 155px;
-    }
-
-}
-
-@media only screen and (max-width: 346px) {
-
-    .base-mobile__card {
-        width: 150px;
-    }
-
-}
-
-@media only screen and (max-width: 336px) {
-    .base-mobile {
-        width: 90%;
-        font-size: 0.8rem;
-    }
-
-    .base-mobile__card {
-        width: 145px;
-    }
-
-}
-
-@media only screen and (max-width: 326px) {
-    .base-mobile__card {
-        width: 140px;
-    }
-
-}
-
-@media only screen and (max-width: 320px) {
-   
-
-    .base-mobile__card {
-        width: 138px;
-    }
-
-    .base-mobile__card-img {
-        width: 100%;
-    }
-}
-
-@media only screen and (max-width: 316px) {
-   
-    .base-mobile__card {
-        width: 135px;
-    }
-}
-
-@media only screen and (max-width: 306px) {
-   
-    .base-mobile__card {
-        width: 130px;
-    }
-}
-
-@media only screen and (max-width: 296px) {
-   
-    .base-mobile__card {
-        width: 125px;
-    }
-}
-
-@media only screen and (max-width: 286px) {
-   
-    .base-mobile__card { 
-        width: 120px;
-    }    
-}   
-
-@media only screen and (max-width: 276px) {
-   
-    .base-mobile__card {
-        width: 115px;
-    }
-}
-
-@media only screen and (max-width: 266px) {
-   
-    .base-mobile__card {
-        width: 105px;
-    }
-}
-
-@media only screen and (max-width: 256px) {
-   
-    .base-mobile__card {
-        width: 100px;
-    }
-}
-
-@media only screen and (max-width: 246px) {
-   
-    .base-mobile__card {
-        width: 98px;
-    }
-}
-
-@media only screen and (max-width: 236px) {
-   
-    .base-mobile__card {
-        width: 95px;
-    }
-}
-
-@media only screen and (max-width: 226px) {
-   
-    .base-mobile__card {
-        width: 85px;
-    }
-}
 /* base css end*/
