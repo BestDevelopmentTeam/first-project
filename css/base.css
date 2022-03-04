@@ -10,12 +10,21 @@
 
 .base {
     width: 100%;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    flex-direction: column;
     justify-items: center;
     align-items: center;
+
     
+}
+
+.base-flex {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
 }
 
 .base__item-center {
@@ -109,6 +118,7 @@
 }
 
 .base-content__h2 {
+    width: 197px;
     font-family: 'Poppins-SemiBold', sans-serif;
     font-style: normal;
     font-weight: 600;
