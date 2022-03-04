@@ -13,6 +13,7 @@ del {
 img {
   width: 100%;
   height: 100%;
+  object-fit: cover;
 }
 .hidden {
   display: none;
@@ -53,7 +54,7 @@ img {
 }
 .sneakers_leftInnerBlock:last-child {
   justify-content: space-between;
-  margin-top: 14rem;
+  margin-top:6rem;
   width: 39rem;
   padding-left: 1rem;
 }
