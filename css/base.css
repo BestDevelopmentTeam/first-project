@@ -16,8 +16,6 @@
     flex-direction: column;
     justify-items: center;
     align-items: center;
-
-    
 }
 
 .base-flex {
@@ -28,7 +26,7 @@
 }
 
 .base__item-center {
-    grid-column: 1/4;
+    text-align:center;
     margin-top: 7.5625rem;
     margin-bottom: 4.4375rem;
 }
@@ -49,8 +47,12 @@
 
 
 .base__item {
-    width: 200px;
+    width: 100%;
     min-height: 96px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .base__item-h2 {
@@ -64,7 +66,7 @@
 }
 
 .top {
-    padding-top: 4.2rem;
+    padding-top: 3.8rem;
 }
 
 .bottom {
@@ -78,10 +80,11 @@
     font-size: 18px;
     line-height: 22px;
     color: var(--dark-color);
+    width: 60%;
 }
 
 .base__box {
-    width: 334px;
+    width: 100%;
     display: flex;
     justify-content: center;
     margin: 0.4375rem 1rem 4.4375rem 1rem;
@@ -138,7 +141,6 @@
 }
 
 .base__square {
-    margin-left: 3rem;
     display: flex;
     justify-content: center;
     text-align: start;
@@ -203,19 +205,18 @@
 }
 
 .base-form {
-    grid-column: 1/4;
     display: flex;
     justify-content: center;
     margin: 8rem 0 6rem 0;
+    width: 100%;
 }
 
 .base-form__input {
-    width: 633px;
-    height: 64px;
+    width: 60%;
     border: 2px solid var(--primary-color);
     border-top-left-radius: 6px;
     border-bottom-left-radius: 6px;
-    padding: 22px 0 18px 20px;
+    padding: 22px 0 22px 20px;
 }
 
 .base-form__input::placeholder {
@@ -232,8 +233,6 @@
 }
 
 .base-form__btn {
-    width: 10vw;
-    height: 64px;
     background-color: var(--primary-color);
     color: #fff;
     font-family: 'Poppins-Regular', sans-serif;
