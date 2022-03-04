@@ -192,10 +192,10 @@
 }
 
 .recommend__card {
-    width: 98vw;
+    width: 92vw;
     margin: 0 auto;
     padding: 48px 24px;
-    background-image: url("/images/recommend-section/recommend-section-main.png");
+    background-image: url('../images/recommend-section/recommend-section-main.png');
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;

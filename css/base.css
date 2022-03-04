@@ -390,12 +390,21 @@
 
     .base-mobile {
         width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: start;
+    }
+    
+    .base-cards {
+        width: 100%;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
+        margin-top: 1rem;
         align-items: center;
         justify-items: center;
-        text-align: start;
-        gap: 13px;
+        grid-gap: 8px;
     }
 
     .base-body {
