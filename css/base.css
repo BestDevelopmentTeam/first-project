@@ -612,7 +612,8 @@
    
     .base-mobile__card { 
         width: 120px;
-}
+    }    
+}   
 
 @media only screen and (max-width: 276px) {
    
