@@ -31,7 +31,7 @@
   position: absolute;
   top: 48px;
   left: 426px;
-  font-family: Raleway-Regular;
+  font-family: "Raleway-Regular", sans-serif;
   color: #ffffff;
   z-index: 1;
 }
@@ -75,11 +75,11 @@
 }
 
 .contact__inputs {
-  font-family: Raleway-Medium;
+  font-family: "Raleway-Medium", sans-serif;
   margin-right: 65px;
 }
 
-label {
+.contact__input--title {
   margin-bottom: 8px;
 }
 
@@ -90,7 +90,7 @@ label {
   line-height: 16px;
 }
 
-input {
+.contact__input {
   width: 510px;
   padding: 35px 0 24px 27px;
   border: 1px solid #969393;
@@ -104,7 +104,7 @@ input {
   margin-top: 8px;
 }
 
-input:focus {
+.contact__input:focus {
   outline: none;
   border: 1px solid var(--blue-color);
   box-sizing: border-box;
@@ -112,14 +112,14 @@ input:focus {
   border-radius: 0px 3px 3px 0px;
 }
 
-textarea {
+.contact__input_textarea {
   padding: 41px 27px;
   border: 1px solid #969393;
   box-shadow: 1px 3px 3px rgba(0, 0, 0, 0.01);
   border-radius: 0px 3px 3px 0px;
   width: 510px;
   height: 229px;
-  font-family: Raleway-Medium;
+  font-family: "Raleway-Medium", sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 19px;
@@ -128,7 +128,7 @@ textarea {
   resize: none;
 }
 
-textarea:focus {
+.contact__input_textarea:focus {
   outline: none;
   border: 1px solid var(--blue-color);
   box-sizing: border-box;
@@ -141,7 +141,7 @@ textarea:focus {
   font-weight: 500;
   font-size: 16px;
   line-height: 19px;
-  font-family: Raleway-Medium;
+  font-family: "Raleway-Medium", sans-serif;
 }
 
 .contact__search {
@@ -160,7 +160,7 @@ textarea:focus {
   height: 62px;
   border: none;
   color: #ffffff;
-  font-family: Poppins-SemiBold;
+  font-family: "Poppins-SemiBold", sans-serif;
   font-weight: 600;
   font-size: 20px;
   line-height: 30px;
@@ -174,7 +174,7 @@ textarea:focus {
   color: #262626;
   font-size: 18px;
   line-height: 22px;
-  font-family: ProximaNova-Regular;
+  font-family: "ProximaNova-Regular", sans-serif;
 }
 
 /* CONTACT SECTION MEDIA START */
@@ -187,13 +187,13 @@ textarea:focus {
     left: 505px;
   }
 
-  input,
-  textarea {
+  .contact__input,
+  .contact__input_textarea {
     width: 500px;
     margin-left: 35px;
   }
 
-  label {
+  .contact__input--title {
     margin-left: 35px;
   }
 }
@@ -222,8 +222,8 @@ textarea:focus {
     left: 500px;
   }
 
-  input,
-  textarea {
+  .contact__input,
+  .contact__input_textarea {
     width: 480px;
   }
 
@@ -238,8 +238,8 @@ textarea:focus {
     margin-top: 5px;
   }
 
-  input,
-  textarea {
+  .contact__input,
+  .contact__input_textarea {
     width: 460px;
   }
 
@@ -250,13 +250,13 @@ textarea:focus {
 }
 
 @media (max-width: 1170px) {
-  input,
-  textarea {
+  .contact__input,
+  .contact__input_textarea {
     width: 450px;
     margin-left: 0px;
   }
 
-  label {
+  .contact__input--title {
     margin-left: 0;
   }
 
@@ -278,8 +278,8 @@ textarea:focus {
     width: 1080px;
   }
 
-  input,
-  textarea {
+  .contact__input,
+  .contact__input_textarea {
     width: 430px;
   }
 
@@ -323,18 +323,19 @@ textarea:focus {
     left: 400px;
   }
 
-  label {
+  .contact__input--title {
     margin-left: 40px;
   }
 
-  input {
+  .contact__input {
     width: 400px;
     height: 50px;
     margin-left: 40px;
   }
 
-  textarea {
+  .contact__input_textarea {
     width: 400px;
+    height: 200px;
     margin-left: 40px;
   }
 
@@ -359,8 +360,8 @@ textarea:focus {
     left: 370px;
   }
 
-  input,
-  textarea {
+  .contact__input,
+  .contact__input_textarea {
     width: 300px;
   }
 }
@@ -378,9 +379,9 @@ textarea:focus {
     left: 370px;
   }
 
-  input,
-  textarea,
-  label {
+  .contact__input,
+  .contact__input_textarea,
+  .contact__input_textarea {
     margin-left: 0;
   }
 
@@ -418,14 +419,18 @@ textarea:focus {
     left: 295px;
   }
 
-  input,
-  textarea {
+  .contact__input,
+  .contact__input_textarea {
     width: 624px;
     margin-left: 62px;
   }
 
-  label {
+  .contact__input--title {
     margin-left: 62px;
+  }
+
+  .contact__search {
+    margin-right: 150px;
   }
 }
 
@@ -450,18 +455,18 @@ textarea:focus {
     top: 560px;
   }
 
-  input,
-  textarea {
+  .contact__input,
+  .contact__input_textarea {
     width: 568px;
     margin-left: 62px;
   }
 
-  label {
+  .contact__input--title {
     margin-left: 62px;
   }
 
   .contact__search {
-    margin-right: 100px;
+    margin-right: 120px;
   }
 }
 
@@ -474,14 +479,14 @@ textarea:focus {
     margin-left: 50px;
   }
 
-  input,
-  textarea,
-  label {
+  .contact__input,
+  .contact__input_textarea,
+  .contact__input--title {
     margin-left: 55px;
   }
 
   .contact__search {
-    margin-right: 19%;
+    margin-right: 15%;
   }
 }
 
@@ -505,8 +510,8 @@ textarea:focus {
     left: 240px;
   }
 
-  input,
-  textarea {
+  .contact__input,
+  .contact__input_textarea {
     width: 490px;
   }
 
@@ -515,7 +520,7 @@ textarea:focus {
   }
 
   .contact__search {
-    margin-right: 16%;
+    margin-right: 12%;
   }
 }
 
@@ -532,12 +537,6 @@ textarea:focus {
 @media (max-width: 580px) {
   .contact__search {
     margin-left: -20px;
-  }
-}
-
-@media (max-width: 530px) {
-  .contact__search {
-    padding-right: 17px;
   }
 }
 
@@ -564,14 +563,14 @@ textarea:focus {
     left: 185px;
   }
 
-  input,
-  textarea {
+  .contact__input,
+  .contact__input_textarea {
     width: 400px;
   }
 
-  input,
-  textarea,
-  label {
+  .contact__input,
+  .contact__input_textarea,
+  .contact__input--title {
     margin-left: 60px;
   }
 
@@ -581,6 +580,18 @@ textarea:focus {
 
   .contact__search {
     margin-left: -35px;
+  }
+}
+
+@media (max-width: 540px) {
+  .contact__search {
+    margin-right: 150px;
+  }
+}
+
+@media (max-width: 530px) {
+  .contact__search {
+    padding-right: 17px;
   }
 }
 
@@ -603,8 +614,8 @@ textarea:focus {
     left: 160px;
   }
 
-  input,
-  textarea {
+  .contact__input,
+  .contact__input_textarea {
     width: 350px;
   }
 
@@ -668,14 +679,14 @@ textarea:focus {
     left: 135px;
   }
 
-  input,
-  textarea {
+  .contact__input,
+  .contact__input_textarea {
     width: 300px;
   }
 
-  input,
-  textarea,
-  label {
+  .contact__input,
+  .contact__input_textarea,
+  .contact__input--title {
     margin-left: 70px;
   }
 
@@ -764,8 +775,8 @@ textarea:focus {
     font-size: 10px;
   }
 
-  input,
-  textarea {
+  .contact__input,
+  .contact__input_textarea {
     width: 250px;
   }
 
@@ -792,7 +803,7 @@ textarea:focus {
 
 @media (max-width: 330px) {
   .contact__search {
-    margin-left: -90px;
+    margin-left: -89px;
   }
 
   .contact__search input {
@@ -802,7 +813,7 @@ textarea:focus {
 
 @media (max-width: 320px) {
   .contact__search {
-    margin-left: -95px;
+    margin-left: -92px;
   }
 
   .contact__inputs {
