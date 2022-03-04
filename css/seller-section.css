@@ -394,6 +394,9 @@
     .seller__top {
         width: 100%;
     }
+    .seller{
+        padding-top: 200px;
+    }
 }
 @media (max-width:768px) {
     .seller__cards {
@@ -406,6 +409,7 @@
 
     .seller {
         margin-bottom: 60px;
+        padding-top: 40px;
     }
 }
 @media (max-width: 576px) {
