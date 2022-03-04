@@ -158,14 +158,7 @@ padding-top: 30px;
     max-width: 176px;
 }
 
-@media(max-width:1400px){
-    .container{
-        max-width: 95vw;
-    }
-}
 @media(max-width:1320px){
-   
-
     .hero-item {
         width: 346px;
         height: 286px;
@@ -194,17 +187,11 @@ padding-top: 30px;
     }
 }
 @media(max-width:1080px){
-   
-
     .hero-item {
         width: 244px;
          height: 209px;
         padding: 19px 22px;
     }
-
-    
-    
-
     .hero-item-top {
         column-gap: 13px;
         padding: 14px 14px 0;
