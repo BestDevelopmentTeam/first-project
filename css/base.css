@@ -547,7 +547,6 @@
     .base-mobile {
         width: 95%;
         font-size: 0.8rem;
-        margin-left: -0.3rem;
     }
 
     .base-mobile__card {
@@ -577,7 +576,6 @@
     .base-mobile {
         width: 90%;
         font-size: 0.8rem;
-        margin-left: 0.3rem;
     }
 
     .base-mobile__card {
