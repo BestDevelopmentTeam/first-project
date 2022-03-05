@@ -541,6 +541,9 @@
 }
 
 @media (max-width: 560px) {
+  .contact{
+    margin-top: 0;
+  }
   .contact-shadow {
     width: 500px;
   }
