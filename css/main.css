@@ -1,4 +1,3 @@
-
 @import url("./seller-section.css");
 @import url("./sneakers-section.css");
 @import url("./hero.css");
@@ -6,7 +5,9 @@
 @import url("./contact.css");
 @import url("./product_content.css");
 @import url("./product-list.css");
-@import url(./stylesheets/related-products.css);
+@import url("./stylesheets/related-products.css");
+@import url("./cart.css");
+@import url("./nav-footer.css");
 
 
 /* ! Imported Styles */
@@ -21,9 +22,13 @@
 html,
 body {
     overflow-x: hidden;
+    position: relative;
     scroll-behavior: smooth;
     min-height: 100vh;
     width: 100%;
+}
+button,a{
+    cursor: pointer;
 }
 
 /** Variables */
