@@ -31,6 +31,13 @@
   margin-left: 22px;
 }
 
+.card1,
+.card2,
+.card3,
+.card4 {
+  margin-bottom: 88px;
+}
+
 .related-products-card:first-of-type {
   margin-left: 10px;
 }
@@ -201,6 +208,22 @@
 @media (max-width: 950px) {
   .related-products-cards {
     flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .related-products-card:first-of-type {
+    margin-left: 20px;
+  }
+
+  .card1,
+  .card2 {
+    margin-bottom: 30px;
+  }
+
+  .car3,
+  .car4 {
+    margin-bottom: 88px;
   }
 
   .related-products-img img {
@@ -223,13 +246,13 @@
   }
 
   .related-products-awesome {
-    top: 1803px;
+    top: 1773px;
   }
 }
 
 @media (max-width: 940px) {
   .related-products-awesome {
-    top: 2675px;
+    top: 2645px;
   }
 }
 
@@ -240,11 +263,11 @@
 
   .related-products-head-title {
     margin-top: 0;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
   }
 }
 
-@media (max-width: 650px) {
+@media (max-width: 691px) {
   .related-products-img img {
     width: 250px;
     height: 222px;
@@ -255,19 +278,42 @@
   }
 }
 
+@media (max-width: 650px) {
+  .related-products-prices {
+    margin-left: 60px;
+  }
+}
+
 @media (max-width: 615px) {
   .related-products-awesome {
     top: 2401px;
   }
+
+  .related-products-card:first-of-type {
+    margin-left: 0;
+  }
+
+  .card3 {
+    margin-left: -2px;
+  }
 }
 
 @media (max-width: 575px) {
+  .related-products-img img {
+    width: 225px;
+    height: 194px;
+  }
+
   .related-products-head-title {
     margin-top: 150px;
   }
 
   .related-products-awesome {
     top: 2550px;
+  }
+
+  .related-products-prices {
+    margin-left: 46px;
   }
 }
 
@@ -298,6 +344,39 @@
   }
 }
 
+@media (max-width: 473px) {
+  .related-products-head-title {
+    font-size: 25px;
+  }
+
+  .related-products-img img {
+    width: 170px;
+    height: 142px;
+  }
+
+  .related-products-title {
+    font-size: 16px;
+    margin-left: 10px;
+  }
+
+  .related-products-card {
+    width: 180px;
+  }
+
+  .card1,
+  .card2 {
+    margin-bottom: 15px;
+  }
+
+  .related-products-rates {
+    margin-left: -5px;
+  }
+
+  .related-products-rates img {
+    margin-left: 5px;
+  }
+}
+
 @media (max-width: 460px) {
   .related-products-awesome {
     display: none;
@@ -318,6 +397,14 @@
     padding: 16px 16px 8px 16px;
   }
 
+  .related-products-rates {
+    margin-left: 5px;
+  }
+
+  .related-products-title {
+    margin-left: 20px;
+  }
+
   .related-products-title {
     width: 150px;
   }
@@ -330,12 +417,32 @@
     margin-left: -19px;
   }
 
-  .related-products-head-title {
-    font-size: 30px;
-  }
-
   .mt {
     margin-top: -70px;
+  }
+}
+
+@media (max-width: 421px) {
+  .related-products-head-title {
+    font-size: 22px;
+  }
+
+  .related-products-card {
+    width: 165px;
+  }
+
+  .related-products-img img {
+    width: 155px;
+    height: 155px;
+    padding-left: 18px;
+  }
+
+  .related-products-title {
+    font-size: 14px;
+  }
+
+  .related-products-prices {
+    margin-left: 0px;
   }
 }
 
@@ -364,15 +471,24 @@
   }
 }
 
-@media (max-width: 356px) {
+@media (max-width: 391px) {
   .related-products-head-title {
-    font-size: 28px;
+    font-size: 20px;
+  }
+
+  .related-products-card {
+    width: 155px;
+  }
+
+  .related-products-img img {
+    width: 150px;
+    height: 150px;
   }
 }
 
-@media (max-width: 350px) {
-  .related-products-head-title {
-    font-size: 28px;
+@media (max-width: 371px) {
+  .related-products-card {
+    width: 145px;
   }
 
   .related-products-img img {
@@ -381,33 +497,95 @@
   }
 
   .related-products-title {
-    width: 115px;
-    font-size: 15px;
     font-size: 12px;
   }
 
+  .related-products-rates img {
+    width: 12px;
+    height: 12px;
+  }
+
   .related-products-prices {
-    margin-left: 12px;
+    margin-left: -5px;
+  }
+
+  .related-products-previous-price-wrap {
+    margin-left: -5px;
+  }
+
+  .related-products-price {
+    font-size: 12px;
+  }
+
+  .related-products-previous-price,
+  .related-products-discount {
+    font-size: 10px;
   }
 }
 
-@media (max-width: 335px) {
-  .related-products-head-title {
-    font-size: 27px;
+@media (max-width: 351px) {
+  .related-products-card {
+    width: 143px;
+  }
+  .related-products-img img {
+    width: 137px;
+    height: 137px;
   }
 }
 
-@media (max-width: 330px) {
+@media (max-width: 347px) {
+  .related-products-card {
+    width: 140px;
+  }
   .related-products-img img {
     width: 135px;
     height: 135px;
   }
 
-  .related-products-title {
-    width: 110px;
-    font-size: 12px;
+  .related-products-prices {
+    margin-left: 0px;
   }
 
+  .related-products-title {
+    font-size: 10px;
+    width: 120px;
+  }
+}
+
+@media (max-width: 342px) {
+  .related-products-card {
+    width: 138px;
+  }
+}
+
+@media (max-width: 337px) {
+  .related-products-card {
+    width: 135px;
+  }
+
+  .related-products-img img {
+    width: 133px;
+    height: 133px;
+  }
+}
+
+@media (max-width: 331px) {
+  .related-products-card {
+    width: 133px;
+    display: inline-block;
+  } 
+
+  .related-products-img img {
+    width: 130px;
+    height: 130px;
+  }
+
+  .card2 .related-products-prices {
+    margin-top: -10px;
+  }
+}
+
+@media (max-width: 330px) {
   .related-products-prices {
     margin-left: 10px;
   }
@@ -434,11 +612,45 @@
   .related-products-discount {
     font-size: 10px;
   }
+
+  .card2 .related-products-prices {
+    margin-top: 0px;
+  }
 }
 
-@media (max-width: 335px) {
-  .related-products-head-title {
-    font-size: 26px;
+@media (max-width: 327px) {
+  .related-products-card {
+    width: 132px;
+  }
+}
+
+@media (max-width: 325px) {
+  .related-products-card {
+    width: 131px;
+  }
+}
+
+@media (max-width: 323px) {
+  .related-products-card {
+    width: 130px;
+  }
+
+  .related-products-img img {
+    padding-right: 20px;
+  }
+}
+
+@media (max-width: 321px) {
+  .related-products-card {
+    width: 129px;
+  }
+
+  .related-products-img img {
+    padding-right: 20px;
+  }
+
+  .related-products-title {
+    width: 120px;
   }
 }
 
@@ -446,16 +658,11 @@
   .related-products-img img {
     width: 133px;
     height: 133px;
+    padding-right: 25px;
   }
 
-  .related-products-cards {
-    margin-left: 75px;
-  }
-
-  .related-products-head-title {
-    font-size: 25px;
-    margin-bottom: 10px;
-    margin-left: 5px;
+  .related-products-prices {
+    margin-left: 20px;
   }
 }
 /* RELATED PRODUCTS MEDIA QUERY END */
