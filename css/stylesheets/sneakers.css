@@ -18,7 +18,7 @@ img {
 .hidden {
   display: none;
 }
-.sneakers {
+.sneaker {
   display: flex;
   justify-content: center;
   margin-top: 2rem;

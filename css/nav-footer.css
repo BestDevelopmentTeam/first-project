@@ -13,11 +13,6 @@
     padding: 0 15px;
 }
 
-.container {
-    max-width: 1345px;
-    width: 100%;
-    margin: 0 auto;
-}
 
 .nav {
     display: flex;
@@ -57,7 +52,7 @@
     font-size: 24px;
     line-height: 36px;
     color: #262626;
-    font-family: 'p5';
+    font-family: 'Poppins-Medium',sans-serif;
 }
 
 .close {
@@ -136,7 +131,8 @@
     font-size: 20px;
     line-height: 24px;
     color: #262626;
-    font-family: 'n4';
+    font-family: 'Poppins-Medium',sans-serif;
+
 }
 
 .nav_lang {
@@ -147,7 +143,8 @@
 
 .nav_lang select {
     border: none;
-    font-family: 'n4';
+    font-family: 'Poppins-Medium',sans-serif;
+
     font-size: 20px;
     color: #262626;
 }
@@ -171,7 +168,8 @@
     font-size: 18px;
     line-height: 27px;
     color: #22262A;
-    font-family: 'p7';
+    font-family: 'Poppins-Medium',sans-serif;
+
 }
 
 .nav_list-item {
@@ -212,7 +210,8 @@
     font-size: 24px;
     line-height: 36px;
     color: #262626;
-    font-family: 'p5';
+    font-family: 'Poppins-Medium',sans-serif;
+
 }
 
 .nav_list-item .nav_link:hover {
@@ -471,7 +470,8 @@
     display: flex;
     align-items: center;
     margin-left: 8px;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins-Medium',sans-serif;
+
     font-weight: bold;
     font-size: 18px;
     line-height: 27px;
@@ -484,7 +484,7 @@
     width: 100%;
     font-size: 12px;
     line-height: 15px;
-    font-family: 'Proxima Nova', sans-serif;
+    font-family: 'ProximaNova-Medium', sans-serif;
     color: #22262A;
 }
 
@@ -495,7 +495,8 @@
 }
 
 .footer_titles {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins-Medium',sans-serif;
+
     font-size: 18px;
     line-height: 27px;
     color: #22262A;
@@ -505,7 +506,8 @@
     width: 150px;
     font-size: 14px;
     line-height: 21px;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins-Medium',sans-serif;
+
     color: #22262A;
 
 }
@@ -514,7 +516,8 @@
 .footer li {
     font-size: 14px;
     line-height: 21px;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins-Medium',sans-serif;
+
     color: #262626;
 }
 
@@ -530,7 +533,7 @@
 .byinfo p {
     font-size: 14px;
     line-height: 17px;
-    font-family: 'Proxima Nova', sans-serif;
+    font-family: 'ProximaNova-Medium', sans-serif;
     color: #C1C8CE;
 }
 
