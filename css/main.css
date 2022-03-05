@@ -8,6 +8,7 @@
 @import url("./stylesheets/related-products.css");
 @import url("./cart.css");
 @import url("./nav-footer.css");
+@import url("./navbar-section.css");
 
 
 /* ! Imported Styles */
@@ -45,6 +46,7 @@ button,a{
     --blue-color: #33A0FF;
     --grey-color:#9098B1;
     --dark-color-2:#22262A;
+    --dark-color-3:#262626;
 }
 
 /** Fonts */

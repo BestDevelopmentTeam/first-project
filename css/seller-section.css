@@ -265,7 +265,8 @@
     margin-bottom: 15px;
 }
 
-.seller__mobile-top>h2,a {
+.seller__mobile-top>h2,
+.seller__mobile-top>a {
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
@@ -501,7 +502,8 @@
     .seller__button {
         display: none;
     }
-    .seller__mobile-top>h2,a {
+    .seller__mobile-top>h2,
+    .seller__mobile-top>a {
         font-size: 14px;
     }
     .seller__card-imgbox{
@@ -546,7 +548,8 @@
     .seller__button:hover {
         padding: 8px 20px;
     }  
-    .seller__mobile-top>h2,a {
+    .seller__mobile-top>h2
+    .seller__mobile-top>a {
         font-size: 14px;
     }
     .seller__card-imgbox{

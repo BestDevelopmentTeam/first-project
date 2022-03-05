@@ -1,10 +1,11 @@
-// PRODUCTS Chosen color
-let colors = document.querySelectorAll('.container__colors .color');
-colors.forEach((color, i) => {
-  const hexColors = ['#fc3e39', '#006cff', '#171717', '#fff600', '#ff00b4', '#efdfdf'];
-  color.addEventListener('click', () => {
-    colors.forEach((color) => color.style.borderColor = 'transparent');
-    color.style.borderColor = hexColors[i]
-  });
+//* Navbar
+const nav = document.querySelector(".nav");
+const openBtn = document.querySelector(".navbar__menu-icon");
+const closeBtn = document.querySelector(".nav__menu-close");
+
+openBtn.addEventListener('click',() => {
+    nav.classList.add("open");
 });
-// PRODUCTS chosen color end
+closeBtn.addEventListener('click',() => {
+    nav.classList.remove("open");
+});
