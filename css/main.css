@@ -5,6 +5,7 @@
 @import url("./base.css");
 @import url("./contact.css");
 @import url("./product_content.css");
+@import url("./product-list.css");
 
 
 /* ! Imported Styles */
@@ -37,6 +38,7 @@ body {
     --red-color: #FB7181;
     --blue-color: #33A0FF;
     --grey-color:#9098B1;
+    --dark-color-2:#22262A;
 }
 
 /** Fonts */
