@@ -104,8 +104,9 @@
 }
 
 .base__image-kronos {
-    min-width: 116px;
-    min-height: 52px; 
+    width: 100%;
+    height: auto;
+    object-fit: cover; 
     padding-top: 2.1875rem;
 }
 
@@ -253,20 +254,10 @@
 
 /* media quers */
 
-@media only screen and (max-width: 1450px) {
-    .base-flex  {
-        grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
-    }
-}
 
 @media only screen and (max-width: 1200px) {
     .container {
         width: 100%;
-    }
-
-    .base-flex {
-        grid-template-columns: repeat(auto-fill, minmax(266px, 1fr));
-        gap: 1.5rem;
     }
 
     .base__item-heading {
@@ -289,16 +280,12 @@
     }    
 
     .base-form__btn {
-        font-size: 1rem;
         padding: 1.1rem 1.6875rem;
     }
 }
 
 
 @media only screen and (max-width: 1136px) {
-    .base-flex {
-        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-    }
 
     .base__box {
         display: grid;
@@ -306,7 +293,7 @@
     }
 
     .nike {
-        padding-top: 68px;
+        padding-top: 28px;
     }
     
     .base__square {
@@ -322,13 +309,9 @@
 
 @media only screen and (max-width: 992px) {
 
-    .base-flex {
-        grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
-    }
-
     .base__image-shoes{
-        width: 165px;
-        height: 165px;
+        width: 100%;
+        height: 100%;
         object-fit: cover;
     }
 
@@ -337,16 +320,20 @@
     }
 }
 
+@media only screen and (max-width: 914px) {
+    .base-flex {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 1rem;
+    }
+
+}
+
 @media only screen and (max-width: 768px) {
 
     .base-flex {
         grid-template-columns: repeat(2, 1fr);
         font-size: 0.8rem;
-        gap: 0.8rem;
-    }
-
-    .base__item {
-        margin-top: 1rem;
+        grid-gap: 0.8rem;
     }
 
     .base__box, .base__square {
@@ -354,18 +341,65 @@
     }
 
     .base-body {
-        width: 152px;
-        height: 152px;
+        width: 100%;
+        height: auto;
+    }
+
+    .base__item-col {
+        margin-top: 2rem;
+    }
+
+    .base__item-center {
+        text-align: center;
+        margin-top: 1.5625rem;
+        margin-bottom: 1.4375rem;
+    }
+
+    .base__item-middle {
+        grid-column: 1/4;
+        margin: 0.875rem 0 1.625rem 0;
+    }
+
+    .base-form {
+        margin: 2rem 0 3rem 0;
+    }
+}
+
+@media only screen and (max-width: 740px) {
+    .base-flex {
+        grid-template-columns: 1fr;
+        width: 100%;
+        font-size: 0.8rem;
+        grid-gap: 0.2rem;
+    }
+
+    .base__item-p {
+        width: 46%;
+    }
+
+    .base-form {
+        margin: 3rem 0 4rem 0;
+    }
+
+    .base__item-heading {
+        width: 100%;
+        margin-top: 1rem;
+        justify-self: start;
+        font-size: 3rem;
     }
 }
 
 @media only screen and (max-width: 450px) {
-    .base-flex {
-        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
-    }
 
-    .base__box, .base__square {
-        margin-left: 0;
+    .base__item-p {
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 424px) {
+
+    .base__item-p {
+        width: 84%;
     }
 }
 
@@ -388,22 +422,18 @@
         align-items: center;
         flex-direction: column;
         text-align: start;
+        margin-bottom: 1rem;
     }
     
     .base-cards {
         width: 100%;
+        height: auto;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         margin-top: 1rem;
         align-items: center;
         justify-items: center;
         grid-gap: 8px;
-    }
-
-    .base-body {
-        width: 100%;
-        grid-column: 1/3;
-        position: relative;
     }
 
     .base-mobile__body-h2 {
@@ -427,23 +457,9 @@
         color: #fff;
     }
 
-    .base-mobile__body-h2 {
-        position: absolute;
-        z-index: 10;
-        top: 0;
-        left: 2.3rem;
-    }
-
-    .base-mobile__body-p {
-        position: absolute;
-        z-index: 10;
-        top: 5rem;
-        left: 2.3rem;
-    }
-
     .base-mobile__card {
-        width: 175px;
-        height: 282px;
+        width: 100%;
+        height: auto;
         padding: 1rem;
         border: 1px solid #EBF0FF;
         border-radius: 4px;
@@ -498,12 +514,6 @@
     }
 }
 
-@media only screen and (max-width: 386px) {
-    .base-mobile__card {
-        width: 165px;
-    }
-}
-
 @media only screen and (max-width: 366px) {
 
     .base-mobile__card {
@@ -514,13 +524,8 @@
 
 @media only screen and (max-width: 356px) {
     .base-mobile {
-        width: 100%;
         font-size: 0.8rem;
     }
-
-    .base-mobile__card-img {
-        width: 100%;
-    }
-}
+} 
 
 /* base css end*/
