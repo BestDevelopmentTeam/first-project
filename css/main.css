@@ -1,3 +1,4 @@
+@import url("./navbar-section.css");
 @import url("./seller-section.css");
 @import url("./sneakers-section.css");
 @import url("./hero.css");
@@ -8,7 +9,6 @@
 @import url("./stylesheets/related-products.css");
 @import url("./cart.css");
 @import url("./nav-footer.css");
-@import url("./navbar-section.css");
 
 
 /* ! Imported Styles */
