@@ -139,7 +139,7 @@
     font-family: "Poppins-Medium", sans-serif;
     color: var(--dark-color-3);
     cursor: pointer;
-    transition: 1.2s cubic-bezier(.45, .05, .55, .95);
+    transition: .3s cubic-bezier(.45, .05, .55, .95);
 }
 
 .nav__link:hover {
