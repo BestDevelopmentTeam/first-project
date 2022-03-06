@@ -389,6 +389,7 @@
     width: 500px;
     display: flex;
     margin: auto;
+    margin-left: 210px;
   }
 
   .contact__search button {
@@ -430,13 +431,19 @@
   }
 
   .contact__search {
-    margin-right: 150px;
+    margin-left: 110px;
   }
 }
 
 @media (max-width: 815px) {
   .contact-shadow {
     width: 760px;
+  }
+}
+
+@media (max-width: 795px) {
+  .contact__search {
+    margin-left: 90px;
   }
 }
 
@@ -448,11 +455,16 @@
   .contact__img img {
     width: 570px;
     height: 656px;
+    margin-top: 30px;
   }
 
   .contact__ellipse {
     left: 265px;
     top: 560px;
+  }
+
+  .contact__inputs {
+    margin-top: -50px;
   }
 
   .contact__input,
@@ -466,7 +478,7 @@
   }
 
   .contact__search {
-    margin-right: 120px;
+    margin-left: 70px;
   }
 }
 
@@ -487,6 +499,18 @@
 
   .contact__search {
     margin-right: 15%;
+  }
+}
+
+@media (max-width: 720px) {
+  .contact__search {
+    margin-left: 45px;
+  }
+}
+
+@media (max-width: 685px) {
+  .contact__search {
+    margin-left: 40px;
   }
 }
 
@@ -520,17 +544,28 @@
   }
 
   .contact__search {
-    margin-right: 12%;
+    margin-left: 30px;
+  }
+}
+
+@media (max-width: 640px) {
+  .contact__search {
+    margin-left: 5px;
   }
 }
 
 @media (max-width: 615px) {
   .contact-shadow {
     width: 550px;
+    height: auto;
+  }
+
+  .contact__inputs {
+    margin-top: -70px;
   }
 
   .contact__search {
-    margin-right: 45px;
+    margin-left: 0;
   }
 }
 
@@ -541,9 +576,6 @@
 }
 
 @media (max-width: 560px) {
-  .contact{
-    margin-top: 0;
-  }
   .contact-shadow {
     width: 500px;
   }
@@ -578,11 +610,12 @@
   }
 
   .contact__inputs {
-    margin-top: -400px;
+    margin-top: -200px;
   }
 
   .contact__search {
-    margin-left: -35px;
+    margin-left: -15px;
+    width: 460px;
   }
 }
 
@@ -608,13 +641,17 @@
   }
 
   .contact__texts {
-    top: 20px;
+    top: 50px;
     left: 260px;
   }
 
   .contact__ellipse {
     top: 300px;
     left: 160px;
+  }
+
+  .contact__inputs {
+    margin-top: -230px;
   }
 
   .contact__input,
@@ -624,13 +661,13 @@
 
   .contact__search {
     width: 350px;
-    padding-left: 20px;
+    padding-left: 0px;
   }
 }
 
 @media (max-width: 485px) {
   .contact__search {
-    padding-left: 5px;
+    margin-left: -30px;
   }
 }
 
@@ -640,11 +677,17 @@
   }
 
   .contact__search {
-    margin-left: -44px;
+    margin-left: -35px;
   }
 
   .contact__search button {
     padding: 14px 25px;
+  }
+}
+
+@media (max-width: 440px) {
+  .contact__search {
+    margin-left: -45px;
   }
 }
 
@@ -660,7 +703,8 @@
 
 @media (max-width: 420px) {
   .contact__search {
-    margin-left: -65px;
+    margin-left: -55px;
+    margin-top: -70px;
   }
 }
 
@@ -693,18 +737,22 @@
     margin-left: 70px;
   }
 
+  .contact__search button {
+    padding: 14px 15px;
+  }
+
   .contact__inputs {
-    margin-top: -500px;
+    margin-top: -300px;
   }
 
   .contact__search {
-    margin-left: -80px;
+    margin-left: -60px;
   }
 }
 
 @media (max-width: 400px) {
   .contact__search {
-    margin-left: -67px;
+    margin-left: -53px;
   }
 
   .contact__email,
@@ -716,27 +764,30 @@
 
 @media (max-width: 388px) {
   .contact__search {
-    margin-left: -75px;
+    margin-left: -60px;
   }
 }
 
 @media (max-width: 380px) {
   .contact__search {
-    margin-left: -78px;
-    width: 300px;
+    margin-left: -65px;
+    width: 250px;
   }
 }
 
 @media (max-width: 372px) {
   .contact__search {
-    margin-left: -83px;
-    width: 290px;
+    margin-left: -50px;
+  }
+
+  .contact__search input {
+    width: 200px;
   }
 }
 
 @media (max-width: 364px) {
   .contact__search {
-    margin-left: -85px;
+    margin-left: -55px;
     width: 290px;
   }
 }
@@ -769,7 +820,7 @@
   }
 
   .contact__texts {
-    top: 10px;
+    top: 25px;
   }
 
   .contact__email,
@@ -778,13 +829,17 @@
     font-size: 10px;
   }
 
+  .contact__inputs {
+    margin-top: -350px;
+  }
+
   .contact__input,
   .contact__input_textarea {
     width: 250px;
   }
 
   .contact__search {
-    margin-left: -80px;
+    margin-left: -70px;
   }
 
   .contact__search input {
@@ -800,27 +855,30 @@
 
 @media (max-width: 345px) {
   .contact__search {
-    margin-left: -85px;
+    margin-left: -80px;
   }
 }
 
 @media (max-width: 330px) {
+  .contact__inputs {
+    margin-top: -370px;
+  }
   .contact__search {
-    margin-left: -89px;
+    margin-left: -80px;
   }
 
   .contact__search input {
     width: 170px;
   }
+
+  .contact__search button {
+    padding: 14px 13px;
+  }
 }
 
 @media (max-width: 320px) {
   .contact__search {
-    margin-left: -92px;
-  }
-
-  .contact__inputs {
-    margin-top: -600px;
+    margin-left: -85px;
   }
 }
 /* CONTACT SECTION MEDIA END */
